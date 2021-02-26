@@ -2,7 +2,7 @@
 %Numerical solution to transient PDEs
 %Author-R Surya Narayan
 %MATLAB script to solve the 1-D advection equation
-%Method: , time explicit (second-order accurate)
+%Method: Leapfrog, time explicit (second-order accurate)
 %==============================problem setup==============================%
 time=25*0.025;%total duration of simulation
 length_u=2; %length of the domain
