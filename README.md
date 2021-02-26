@@ -10,6 +10,9 @@ The above figure shows the onset of oscillations after 3 time steps set with the
 # 1-D advection: Lax-Friedrich 
 A solution to the above shortcoming was proposed by Lax & Friedrich, where the leading u-term is replaced with a spatial average of the cells adjacent to the left and right making the new method conditionally stable (von-Neumann analysis).But alert! notice how there is severe dissipation, as if there was artificial "viscosity" introduced.
 ![plot!](https://github.com/RSuryaNarayan/Basic-Transient-PDEs-/blob/main/Results/Lax-friedrich.PNG)\
+# 1-D:advection: Lax-wendroff
+We go up an order of accuracy more for the time-stepping finite difference and the results are more satisfying! Notice however the small dip in the bottom. This is a signatory dispersive characteristic of the Lax-wendroff scheme. Trying doing all the above ones with a Gaussian wave instead of a simple hat function. 
+![plot!](https://github.com/RSuryaNarayan/Basic-Transient-PDEs-/blob/main/Results/Laxwendroff.PNG)\
 # 1-D Diffusion: Forward-time stepping
 This is a 1-D diffusion code, that uses a full Finite Difference approximation for the derivatives, first order accurate in time and second order accurate in space (for the second derivative). I have plotted the evolution of distribution of concentration (could be any scalar for that matter) with time (for ever 100 timesteps) and here's what it looks like. 
 ![plot!](https://github.com/RSuryaNarayan/Basic-Transient-PDEs-/blob/main/Results/Unsteady%20diffusion.PNG)\
