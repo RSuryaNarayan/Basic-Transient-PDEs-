@@ -2,7 +2,7 @@
 %Numerical solution to transient PDEs
 %Author-R Surya Narayan
 %MATLAB script to solve the 1-D advection equation
-%Method: Upwind, time explicit (second-order accurate)
+%Method: Upwind, time explicit (second-order accurate in space and first order in time)
 %==============================problem setup==============================%
 time=25*0.025;%total duration of simulation
 length_u=2; %length of the domain
